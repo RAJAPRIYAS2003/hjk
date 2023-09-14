@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-font-family: 'Poppins', sans-serif;
+}
+.navcontainer{
+   background-image: url(images/portfolio-bg.png);
+   width: 100%;
+   height: 120vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.navcontainer nav{
+    width: 100%;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+}
+nav .logo img{
+    padding: 15px 15px;
+    width: 133px;
+}
+nav .checkbtn{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+nav .checkbtn img{
+    width: 52px;
+    z-index: 10;
+    position: relative;
+    margin: 20px 20px;
+}
+nav ul{
+    margin-top: -4.6%;
+    margin-left: -110%;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000e6;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    position: relative;
+    font-family: sans-serif;
+}
+nav ul li{
+    list-style-type: none;
+    padding-top: 5px;
+    text-align: center;
+    transform: translatey(530%);
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+.mycheckbox{
+    display: none;
+}
+.checkbtn{
+    float: right;
+    cursor: pointer;
+}
+#mycheck:checked ~ ul{
+    display: block;
+    margin-left: 0;   
+}
+.content{
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 100px;
+    display: flex;  
+    flex-direction: row;
+    text-align: left;
+  
+}
+.content .heading{
+    width: 50%;
+    margin-top: 30px;
+}
+.content .heading h1{
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #470005;
+    font-family: var(--main-font-family);
+}
+.content .heading p{
+    font-size: 16px;
+    padding-top: 30px;
+    color: #3b3b3b;
+    font-family: var(--main-font-family);
+}
+.content .heading .button{
+    display: flex;
+}
+.content .heading button{
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    padding: 12px 26px;
+    border-radius: 50px;
+    background-color: #420106;
+    z-index: -1;
+    font-family: var(--main-font-family);
+}
+.heading .btn a{
+    font-size: 16px;
+    font-family: var(--main-font-family);
+    text-decoration: none;
+    color: white;
+}
+.content .heading .btn1{
+    background-color: white;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.content .heading .btn1 a{
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+.content .heading .btn1:hover{
+    background-color: rgb(99, 19, 19);
+}
+.content .heading .btn1 a:hover{
+    color: white;
+}
+.content .image{
+    width: 50%;
+}
+.content .image img{
+    width: 619px;
+    height: 570px;
+}
+.video{
+    background-image: url(images/img-2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    display: flex;  
+    position: absolute;
+}
+.video p{
+    font-size: 20px;
+    margin-top: 67px;
+    font-family: var(--main-font-family);
+    margin-left: 80px;
+}
+.slider{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.slider a{
+    background-color: rgb(99, 19, 19) ;
+    padding: 25px 20px;
+    border-radius: 200%;
+}
+.slider .a2{
+    background-color: rgb(5, 5, 27);
+    margin-left: 10px;
+}
+.carousel {
+    overflow: hidden;
+    width:100%;
+  }
+
+  .carousel-item {
+    animation: slide 7s infinite;
+  }
+
+  .carousel-item {
+    width: 100%;
+  }
+
+  @keyframes slide {
+    0%{
+      transform: translateX(20%);
+    }
+  }
+
+/*..................................................................................*/
+#What{
+    margin-top: 15%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 82%;
+}
+.container h1{
+    font-size: 40px;
+    color: #0c0b0f;
+    font-weight: bold;
+    font-family: var(--main-font-family);
+    position: relative;
+}
+.container h1::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 500px;
+    top: 33px;
+}
+.container .box{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    margin-top: 10%;
+}
+.container .box1{
+    background-color: #f4f1c3;
+    transition: 0.5s;
+    padding: 0 20px 20px;
+}
+.container .box1 img{
+    margin-top: -50px;
+    margin-left: 10px;
+    width: 90px;
+}
+.container .box1 h4{
+    padding: 40px 0 10px;
+    font-size: 22px;
+    color: #0c0b0f;
+    font-family: var(--main-font-family);
+}
+.container .box1 p{
+    font-size: 16px;
+    font-family: var(--main-font-family);
+}
+.container .box1:hover{
+background-color: rgb(83, 17, 17);
+color: white;
+}
+.container .box1:hover h4{
+    color: white;
+}
+
+/*.......................................................................................................*/
+#about{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: var(--main-font-family);
+}
+#about .about-container{
+    width: 82%;
+    display: flex;
+}
+#about .image1{
+    width: 50%;
+}
+.image1 img{
+    width: 540px;
+}
+#about .para{
+    width: 50%;
+    padding: 0 15px;
+}
+#about .para h1{
+    font-size: 40px;
+}
+#about .para p{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(48, 45, 45);
+}
+#about .para .btn2{
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color: #470005;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+/*.................................................*/
+#work{
+    margin-top: 100px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+#work .work-container{
+    font-family: var(--main-font-family);
+}
+#work h1{
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 70px;
+    margin-left: 110px;
+    color: #0c0b0f;
+}
+#work h1::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    top: 34px;
+}
+#work .change{
+    width: 100%;
+}
+#work .change .photo{
+    margin-top: -10px;
+    position: relative;
+} 
+#work .change .photo img{
+    width: 449px;
+    height: 270px;
+}
+#work .change .photo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    right: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+#work .change .photo:hover::before{
+    background-color:  rgb(99, 19, 19,0.80);
+}
+#work .change .photo .search{
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#work .change .photo .search i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    padding-top: 25px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+#work .change .photo:hover .search{
+    opacity: 1;
+}
+#work .change{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap:0px
+}
+/*.......................................................................................................................................................*/
+#pro{
+    background-image: url(images/portfolio-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pro .content1{
+    width: 60%;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+#pro .content1 h1{
+    font-size: 40px;
+    font-weight: 800;
+    color:#23242a;
+}
+#pro .content1 p{
+    font-size: 16px;
+    padding-top: 30px;
+    color: #23242a;
+}
+#pro .btn3{
+    border: none;
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 17px 120px;
+    border-radius: 70px;
+    color: white;
+    background-color:  #500d12;
+}
+/*.................................................*/
+#consult{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#consult .consult-container{
+    width: 82%;
+    font-family: var(--main-font-family);
+    margin-top: 100px;
+}
+#consult h1{
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 70px;
+    color: #0c0b0f;
+}
+#consult h1::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    top: 37px;
+}
+.consult{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+.para1{
+    width: 50%;
+    padding-top: 120px;
+}
+.para1 p{
+    font-size: 16px;
+    color: #525252;
+    font-weight: 300;
+}
+.para1 .btn4{
+    margin-top: 75px;
+    font-size: 16px;
+    font-family: var(--main-font-family);
+    padding: 15px 45px;
+    border-radius: 30px;
+    border: none;
+    background-color:  #470005;
+    color: white;
+}
+.consult .photo1{
+    width: 50%;
+}
+.consult .photo1 img{
+    width: 540px;
+}
+@media only screen and (max-width:760px){
+  
+}
+/*............................................................*/
+#client{
+    width: 100%;
+    font-family: var(--main-font-family);
+    display: flex;
+    justify-content: center;
+}
+#client h1{
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 70px;
+}
+#client h1::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    top: 37px;
+}
+#client .clientcontainer{
+    width: 82%;
+    margin-top: 80px;
+}
+.clientbottom{
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+}
+.clientitems{
+    display: flex;
+    gap: 25px;
+    justify-content: flex-start;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.clientitems input{
+    display: none;
+}
+.clientitems .small p{
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 300;
+    color: #636161;
+    padding: 20px;
+    text-align: left;  
+    width: 350px; 
+    word-spacing: 5px;
+}
+.small .image2{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+.small .image2 img{
+    width: 82px;
+}
+.small .image2 h2{
+    padding-left: 22px;
+    font-size: 22px;
+    color: #23242a;
+    font-weight: 600;
+}
+.btn10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+.manualBtn{
+    width: 15px;
+    height: 12px;
+    border-radius: 50px;
+    padding-left: 50px;
+    background-color: #500d12;
+    cursor: pointer;
+}
+.manualBtn:hover{
+    background-color: #d1b75e;
+    transition: 0.5s ease-in-out;
+}
+#radiobtn1:checked ~ .first{
+    margin-left: 0;
+    transition: 1s;
+}
+#radiobtn2:checked ~ .first{
+    margin-left: -1120px;
+    transition: 1s;
+}
+#radiobtn3:checked ~ .first{
+    margin-left: -2250px;
+    transition: 1s;
+}
+/*.......................request.........*/
+#request{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#request .request{
+    width: 100%;
+    text-align: center;
+    font-family: var(--main-font-family);
+    padding: 90px 0;
+}
+#request .request h1{
+    font-size: 50px;
+    color: rgb(31, 30, 30);
+    padding-bottom: 40px;
+}
+#request .request p{
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #1b1b1b;
+}
+#request .request form input{
+   padding: 15px 20px;
+   width: 520px;
+   font-size: 18px;
+   border-radius: 30px;
+   margin-top: 40px;
+   font-family: serif;
+   border: 1px solid rgb(104, 102, 102);
+}
+form textarea{
+    border-radius: 50px;
+    margin-top: 50px;
+    width: 520px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: serif;
+}
+form .btn5{
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 15px 70px;
+    border: none;
+    background-color: #d1b75e;
+    border-radius: 30px;
+    color: white;
+}
+@media only screen and (max-width:760px){
+    #request{
+        width: 100%;
+        padding:  0;
+    }
+    #request .request{
+        width: 100%;
+    }
+    #request .request h1{
+        font-size: 28px;
+    }
+    #request .request p{
+        font-size: 14px;
+    }
+    #request .request form input{
+        width: 300px;
+    }
+    form textarea{
+        width: 300px;
+        height: 110px;
+        padding: 36px 20px 10px;
+    }
+}
+/*.............................................................*/
+#contact{
+    background-color: #420106;
+    color: white;
+    padding: 95px 0 45px;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--main-font-family);
+    width: 100%;
+}
+#contact h2{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: var(--main-font-family);
+    padding-bottom: 20px;
+}
+#contact .contact p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+#contact .contact{
+    width: 15%;
+    text-align: left;
+}
+.quick ul li{ 
+   list-style-type: none;
+   padding-top: 4px;
+}
+.quick ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white; 
+}
+.news{
+    width: 40%;
+}
+.new{
+ display: block;
+}
+.new1{
+    display: flex;
+    justify-content: space-around;
+}
+.new h2{
+    padding-bottom: 20px;
+    font-family: var(--main-font-family);
+}
+.new input{
+    margin-top: 40px;
+    padding: 15px 20px;
+    width: 550px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: transparent;
+}
+.new1 .icon img{
+    margin-left: 20px;
+    width: 36px;
+}
+.new form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.new input::placeholder{
+    color: white;
+}
+.btn6{
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: #d1b75e;
+}
+.para2{
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+@media only screen and (max-width:760px){
+    #contact{
+        width: 100%;
+        padding: 100px 20px;
+        display: block;
+    }
+    #contact .contact{
+        width: 70%;
+        margin-bottom: 60px;
+    }
+    #contact .quick{
+        margin-bottom: 60px;
+    }
+    #contact .news{
+        width: 100%;
+    }
+    .new1 .icon{
+        margin-left: 20px;
+    }
+    .news .icon img{
+        width: 30px;
+        margin-left: 3px;
+    }
+    .new1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .new form{
+        display: block;
+    }
+    .new input{
+        width: 280px;
+    }
+
+}
+
+
+
+/*......................................................mobile-view...........................................*/
+@media screen and (min-width:320px) and (max-width:425px){
+    .navcontainer{
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+    nav ul{
+        top: -75%;
+    }
+    .content{
+        width: 100%;
+        padding: 100px 20px;
+        display: block;
+    }
+    .content .heading{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .content .heading h1{
+        font-size: 20px;
+        width: 300px;
+        line-height: 30px;
+        letter-spacing: 0;
+        font-weight: 700;
+    }
+    .content .heading .btn1{
+        margin-left: 0;
+    }
+    .content .image{
+        width: 100%;
+    }
+    .content .image img{
+        width: 400px;
+        height: 300px;
+        padding-left: 0;
+        margin-left: -10px;
+    }
+    .video{
+        display: none;
+    }
+    .carousel{
+        width: 100%;
+    } 
+    .carousel-item {
+        width: 100%;
+    }
+    @keyframes slide {
+      0%{
+        display: none;
+      }
+        
+    }
+    /*......................................................what.......................*/
+    #What{
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .container{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .container h1::after{
+        display: none;
+    }
+    .container .box{
+        display: block;
+        width: 100%;
+
+    }
+    .container .box1 img{
+        width: 100px;
+    }
+    .container .box .box1{
+        margin-top: 90px;
+        width: 100%;
+    }
+    /*....................................about...............................*/
+    #about{
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+    #about .about-container{
+        width: 100%;
+        display:flex;
+        flex-direction: column-reverse;
+
+    }
+    #about .image1{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+    #about .image1 img{
+        width: 300px;
+    }
+    #about .para{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    /*...........................................work.............................*/
+    #work{
+        width: 100%;
+    }
+    #work h1{
+       margin-left: 20px;
+        font-size: 30px;
+    }
+    #work h1::after{
+        display: none;
+    }
+    #work .change{
+        display: block;
+        width: 100%;
+    }
+    #work .change .photo{
+        width: 100%;
+    }
+    #work .change .photo img{
+        width: 100%;
+    }
+    /*................................pro.................................*/
+    #pro{
+        width: 100%;
+        height: auto;
+    }
+    #pro .content1{
+        width: 100%;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        align-items: center;
+    }
+    #pro .content1 h1{
+        font-size: 26px;
+        line-height: 40px;
+    }
+     #pro .content1 p{
+        font-size: 14px;
+     }
+     #pro .btn3{
+        padding: 17px 50px;
+     }
+     /*.......................................consult.............................*/
+     #consult{
+        width: 100%;
+        padding: 30px 10px;
+    }
+    #consult .consult-container{
+        width: 100%;
+    }
+    #consult h1{
+        font-size: 23px;
+    }
+    #consult h1::after{
+        display: none;
+    }
+    .consult{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .consult .para1{
+        width: 100%;
+        padding-top: 0;
+    }
+    .consult .photo1 img{
+        width: 300px;
+    }
+    .consult .photo1{
+        width: 100%;
+        text-align: center;
+    }
+    .para1 .btn4{
+        margin-top: 35px;
+    }
+    /*....................................client.....................*/
+    #client{
+        width: 100%;
+        padding: 0 10px;
+    }
+    #client h1{
+        font-size: 23px;
+    }
+    #client h1::after{
+        display: none;
+    }
+    #client .clientcontainer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .clientbottom{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .clientitems{
+        display: block;
+        flex-direction: column;
+        gap: 0;
+        height: 1240px;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .manualBtn{
+        display: none;
+    }
+    .clientitems .small p{
+        width: 290px;
+        padding: 10px;
+    }
+     .small{
+        margin-top: 20px;
+    }
+    /*..........................................request...................................*/
+
+
+
+}
